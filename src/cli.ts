@@ -77,8 +77,8 @@ async function generate() {
 
   try {
     const files = await generateWebsFiles(didCid, host, pathArg, {
-      gatekeeperUrl: gatekeeper,
-      witnesses: [gatekeeper]
+      gatekeeperUrl: gatekeeper!,
+      witnesses: [gatekeeper!]
     });
 
     const aid = extractAid(didCid);
