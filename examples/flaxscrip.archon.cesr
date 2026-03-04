@@ -1,0 +1,33 @@
+# Archon CESR Event Stream for did:webs:archon.social:flaxscrip:bagaaiera7vsjlu6oiluzd4enop5j7sfzjbwp2ujudt6uunkz6hhd4lgfe4sa
+# Format: ARCHON10JSON (Archon v1.0, JSON encoding)
+# Each event is newline-delimited JSON
+
+# ============================================================================
+# EVENT 0: Inception (icp)
+# Created: 2026-02-03T00:12:20Z
+# ============================================================================
+{"v":"ARCHON10JSON000001_","t":"icp","d":"bagaaiera7vsjlu6oiluzd4enop5j7sfzjbwp2ujudt6uunkz6hhd4lgfe4sa","i":"bagaaiera7vsjlu6oiluzd4enop5j7sfzjbwp2ujudt6uunkz6hhd4lgfe4sa","s":"0","kt":"1","k":[{"kty":"EC","crv":"secp256k1","x":"36I0fzCV03sKnV6KgMSEfhn9ON4UXMfviPHDnuDrQKU","y":"5yACVMxa0sGnOdXTZoa-mNGFaqfEyufdSAZVP-FexM8"}],"nt":"1","n":["HASH_OF_NEXT_KEY"],"bt":"1","b":["https://archon.technology"],"c":["EO"],"r":"hyperswarm","dt":"2026-02-03T00:12:20Z"}
+{"signatures":[{"index":0,"signature":"BASE64_ECDSA_SIGNATURE_OF_INCEPTION_EVENT"}]}
+
+# ============================================================================
+# EVENT 1-13: Updates (upd)
+# Various DID document updates
+# ============================================================================
+{"v":"ARCHON10JSON000001_","t":"upd","d":"bagaaiera...version2...","i":"bagaaiera7vsjlu6oiluzd4enop5j7sfzjbwp2ujudt6uunkz6hhd4lgfe4sa","s":"1","p":"bagaaiera7vsjlu6oiluzd4enop5j7sfzjbwp2ujudt6uunkz6hhd4lgfe4sa","kt":"1","k":[{"kty":"EC","crv":"secp256k1","x":"36I0fzCV03sKnV6KgMSEfhn9ON4UXMfviPHDnuDrQKU","y":"5yACVMxa0sGnOdXTZoa-mNGFaqfEyufdSAZVP-FexM8"}],"a":[{"type":"profile","data":{"name":"flaxscrip"}}],"dt":"2026-02-03T01:00:00Z"}
+{"signatures":[{"index":0,"signature":"BASE64_ECDSA_SIGNATURE"}]}
+
+# ... events 2-12 omitted for brevity ...
+
+# ============================================================================
+# EVENT 14: Current State (upd)  
+# Updated: 2026-02-15T02:52:16Z
+# Anchored to BTC mainnet
+# ============================================================================
+{"v":"ARCHON10JSON000001_","t":"upd","d":"bagaaierawdhmjb47ebalpsxvglavqode46bm5reu4ftckd4kdnq4nems4bxq","i":"bagaaiera7vsjlu6oiluzd4enop5j7sfzjbwp2ujudt6uunkz6hhd4lgfe4sa","s":"14","p":"bagaaiera...version13...","kt":"1","k":[{"kty":"EC","crv":"secp256k1","x":"36I0fzCV03sKnV6KgMSEfhn9ON4UXMfviPHDnuDrQKU","y":"5yACVMxa0sGnOdXTZoa-mNGFaqfEyufdSAZVP-FexM8"}],"a":[{"type":"credential","did":"did:cid:bagaaierabr6od2isnqoauk6z5rwbbocksj47u5sxfrqwflfn26ljaqz3cnmq"},{"type":"credential","did":"did:cid:bagaaieraeea7cgl37ldfwef4qitle6xt73jd43dl54nhaa5zqekw3srck35a"}],"dt":"2026-02-15T02:52:16Z"}
+{"signatures":[{"index":0,"signature":"BASE64_ECDSA_SIGNATURE"}]}
+
+# ============================================================================
+# ANCHOR: Registry Confirmation (anc)
+# BTC mainnet timestamp proof
+# ============================================================================
+{"v":"ARCHON10JSON000001_","t":"anc","d":"bagaaierawdhmjb47ebalpsxvglavqode46bm5reu4ftckd4kdnq4nems4bxq","i":"bagaaiera7vsjlu6oiluzd4enop5j7sfzjbwp2ujudt6uunkz6hhd4lgfe4sa","s":"14","r":"BTC:mainnet","anchor":{"chain":"BTC:mainnet","blockHeight":936642,"blockHash":"000000000000000000021e30edd151ebfc90e321eae5fce58db3becaea9d6d52","txid":"e66e62508c43173be0b2e96dd38690a034deeb72228039bafbd163b9f73a1c1c","txidx":980,"batchid":"did:cid:bagaaierahvxsn6a2kil2ptxw2fcrxodvordlsp55mw6357b77w7vdqn23dcq","timestamp":"2026-02-15T02:52:16Z"}}

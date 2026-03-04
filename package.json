@@ -1,0 +1,58 @@
+{
+  "name": "@archon-protocol/did-webs",
+  "version": "0.1.0",
+  "description": "did:webs driver using Archon Protocol as witness infrastructure",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "did-webs-archon": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "generate": "node dist/cli.js generate",
+    "serve": "node dist/server.js",
+    "test": "node --test dist/**/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "did",
+    "did-webs",
+    "webs",
+    "archon",
+    "decentralized-identity",
+    "verifiable-credentials",
+    "keri",
+    "cesr",
+    "witness",
+    "trust-over-ip",
+    "toip"
+  ],
+  "author": "Archetech <info@archetech.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archetech/did-webs-archon.git"
+  },
+  "homepage": "https://archon.technology",
+  "bugs": {
+    "url": "https://github.com/archetech/did-webs-archon/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.15.2",
+    "typescript": "^5.8.3"
+  }
+}
