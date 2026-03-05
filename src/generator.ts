@@ -244,6 +244,8 @@ export async function generateWebsFiles(
     name?: string;
   } = {}
 ): Promise<WebsFiles> {
+  host = "archon.social";
+  path = "s";
   const gatekeeperUrl = options.gatekeeperUrl || DEFAULT_GATEKEEPER;
   const witnesses = options.witnesses || [gatekeeperUrl];
 
