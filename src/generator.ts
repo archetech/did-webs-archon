@@ -244,8 +244,9 @@ export async function generateWebsFiles(
     name?: string;
   } = {}
 ): Promise<WebsFiles> {
-  host = "archon.social";
-  path = "s";
+  // Allow environment variable overrides
+  host = process.env.ARCHON_WEBS_HOST || host;
+  path = process.env.ARCHON_WEBS_PATH || path;
   const gatekeeperUrl = options.gatekeeperUrl || DEFAULT_GATEKEEPER;
   const witnesses = options.witnesses || [gatekeeperUrl];
 
